@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Age Calculator</h1>
+        <label for="birthdate">Enter Your Birthdate:</label>
+        <input type="date" id="birthdate"><br>
+
+        <label for="birth-hour">Enter Time of Birth (Optional):</label><br>
+        <div class="time-inputs">
+            <input type="number" id="birth-hour" placeholder="Hour" min="0" max="23">
+            <input type="number" id="birth-minute" placeholder="Minute" min="0" max="59">
+            <input type="number" id="birth-second" placeholder="Second" min="0" max="59">
+        </div>
+
+        <button onclick="startLiveCounter()">Calculate Age</button>
+    </div>
+
+    <div id="result-container">
+        <div id="result"></div>
+    </div>
+
+    <button id="theme-toggle">🌙</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
